@@ -7,6 +7,15 @@ import  { Task } from './model/task'
     selector: 'my-app',
     templateUrl: 'app.component.html'
 })
-export class AppComponent {
-    @Input() task: Task;
- }
+export class AppComponent { 
+    private tasks = [
+        new Task(
+            "Buy a monkey",
+            false
+        ),
+        new Task(
+            "Walk the turtle",
+            false
+        )
+    ]
+}
